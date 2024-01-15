@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Roboto', 'Bai Jamjuree';
+}
+
+nav {
+  height: 5rem;
+  text-align: center;
+  color: #1d2383;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
+}
+
+.github-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-app-logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.github-logo {
+  cursor: pointer;
+}
+
+.app-annoucement {
+  background-color: #ffcd00;
+  height: 2rem;
+  width: 100%;
+  margin-top: 0;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1 2;
+  padding: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.left-section {
+}
+
+.app-header {
+  text-align: center;
+  margin-top: 0;
+  color: #1d2383;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.app-secondary-header {
+  color: #1d2383;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.description {
+  font-size: smaller;
+  color: #c4c4c4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.container-info {
+  /* background-color: #f6f6fe; */
+  border: 2px solid #f6f6fe;
+  color: #22318c;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+}
+
+.container-info h4 {
+  margin-bottom: 15px;
+}
+
+.container-info p {
+  margin-bottom: 5px;
+}
+
+.container-date {
+  width: 6rem;
+  background-color: #fff;
+  border: 2px solid #f6f6fe;
+  color: #1d2383;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.container-year {
+  width: 6rem;
+  background-color: #fff;
+  border: 2px solid #f6f6fe;
+  color: #1d2383;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.container-remain {
+  background-color: #f6f6fe;
+  color: #1d2383;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.container-quote {
+  background-color: #f6f6fe;
+  color: #22318c;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+}
+
+.quote {
+  margin-bottom: 20px;
+}
+
+.mid-section {
+  background-color: #fff;
+  padding: 0rem 5rem;
+  width: 90vw;
+  max-width: 35rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+
+.text-input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #e8e8e8;
+  flex: 1 0 auto;
+}
+
+
+.submit-btn {
+  background-color: #f4a816;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.alert {
+  margin-bottom: 1.5rem;
+  height: 1.25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.alert.error {
+  background-color: red;
+  color: #fff;
+}
+
+.alert.success {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-delete {
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-edit {
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: red;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+
+.btn-edit:hover {
+  color: #f4a816;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-section{
+  
+}
+
+.container-time {
+  border: 2px solid #f6f6fe;
+  color: #1d2383;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+/* test comment */
