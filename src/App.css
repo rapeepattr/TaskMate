@@ -145,6 +145,8 @@ h1 {
   border-radius: 0.8rem;
   margin-top: 1rem;
   padding: 2rem 2rem;
+  width: 18rem;
+  max-width: 18rem;
 }
 
 .quote {

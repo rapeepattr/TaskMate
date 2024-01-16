@@ -80,7 +80,7 @@ function App() {
       setEditId(null);
       // setAlert({ show: true, msg: 'แก้ไขรายการเรียบร้อย', type: 'success' })
     } else {
-      // getQuote()
+      getQuote()
       const newItem = {
         id: uuidv4(),
         title: name,
@@ -109,7 +109,6 @@ function App() {
     <>
       <nav>
         <p className='nav-app-logo'>TaskMate.</p>
-        {/* <p className='nav-app-description'>We helps you list what you need to do today.</p> */}
 
         <div className='github-nav'>
           <div>
@@ -120,10 +119,6 @@ function App() {
           </a>
         </div>
       </nav>
-
-      {/* <div className='app-annoucement'>
-        <p>We helps you list you need to do today.</p>
-      </div> */}
 
       <div className='dashboard'>
         <section className='left-section'>
