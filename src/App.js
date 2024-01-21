@@ -12,6 +12,7 @@ function App() {
   // const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
   const [checkEditItem, setCheckEditItem] = useState(false);
   const [editId, setEditId] = useState(null);
+  const [randomTask, setRandomTask] = useState("Let's Random");
 
   const date = new Date()
   const months = [
@@ -105,6 +106,20 @@ function App() {
 
   };
 
+  const genRandomTask = async () => {
+    axios.get(
+      'https://api.api-ninjas.com/v1/bucketlist',
+      {
+        headers: { 'X-Api-Key': 'g9Flz2ZihLpOAdgC4LYdSw==9eCc0TIpoznnyOx6' },
+      }
+    ).then((response) => {
+      setRandomTask(response.data.item)
+    })
+      .catch((error) => {
+        console.error('Error fetching random task:', error);
+      });
+  }
+
   return (
     <>
       <nav>
@@ -137,6 +152,11 @@ function App() {
             <h2>{list.length} In progress</h2>
           </div>
 
+          <section className='container-quote'>
+            <p className='quote'>{quote}</p>
+            <h4 className='author'>- {author}</h4>
+          </section>
+
           <section className='container-info'>
             <h4>What is TaskMate ?</h4>
             <p>✅ Plan your day seamlessly.</p>
@@ -144,10 +164,6 @@ function App() {
             <p>✅ Track your progress.</p>
           </section>
 
-          <section className='container-quote'>
-            <p className='quote'>{quote}</p>
-            <h4 className='author'>- {author}</h4>
-          </section>
         </section>
 
         <section className='mid-section'>
@@ -180,14 +196,12 @@ function App() {
             <p>Live time</p>
           </section>
 
-          <div className='container-remain'>
-            <h2>Inspiration Quote</h2>
-          </div>
-
           <section className='container-quote'>
-            <p className='quote'>{quote}</p>
-            <h4 className='author'>- {author}</h4>
+            <p className='random-tasks'>{randomTask}</p>
           </section>
+          
+          <button className='random-btn' onClick={genRandomTask}>Click to random your tasks</button>
+
         </section>
       </div>
     </>

@@ -257,4 +257,30 @@ h1 {
   margin-bottom: 15px;
 }
 
+.random-btn {
+  border: none;
+  /* border: 1px solid #1d2383; */
+  background-color: #f6f6fe;
+  color: #1d2383;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.random-btn:hover{
+  /* border: 1px solid #1d2383; */
+  transform: rotate();
+  transition: 0.5s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.random-tasks {
+  text-align: center;
+}
 /* test comment */
